@@ -1,5 +1,7 @@
 fileFormatVersion: 2
-guid: 1dfefbca8048f4647b84164e6de38ee5
+guid: 4ab3c7f0b8939574f822a4146d512631
+timeCreated: 1539992925
+licenseType: Free
 ModelImporter:
   serializedVersion: 22
   fileIDToRecycleName:
@@ -10,6 +12,7 @@ ModelImporter:
     400002: cupboard_right
     400004: //RootNode
     2100000: lambert1
+    2100002: dark_wood
     2300000: cupboard_left
     2300002: cupboard_right
     3300000: cupboard_left
@@ -35,7 +38,6 @@ ModelImporter:
     animationRetargetingWarnings: 
     animationDoRetargetingWarnings: 0
     importAnimatedCustomProperties: 0
-    importConstraints: 0
     animationCompression: 1
     animationRotationError: 0.5
     animationPositionError: 0.5
