@@ -59,6 +59,7 @@ GameObject:
   - component: {fileID: 54918746574805722}
   - component: {fileID: 114873445568416120}
   - component: {fileID: 64897517520402356}
+  - component: {fileID: 114934604971976850}
   m_Layer: 0
   m_Name: pan
   m_TagString: Untagged
@@ -275,3 +276,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   com: {x: -0.3, y: -0.8, z: 0.4}
   rb: {fileID: 0}
+--- !u!114 &114934604971976850
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1932408302274726}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 580517986466db74e889f788b6f30e79, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cook_col: {fileID: 64897517520402356}
