@@ -39,4 +39,8 @@ public class Cookable : MonoBehaviour {
 			mat_bot.color = Vector4.Lerp(start_color, cooked_color, cook_timer_bot / cook_time);
 		}
 	}
+
+	public bool isCooked() {
+		return mat_top.color == cooked_color && mat_bot.color == cooked_color;
+	}
 }
