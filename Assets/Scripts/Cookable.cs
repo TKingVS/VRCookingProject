@@ -29,7 +29,7 @@ public class Cookable : MonoBehaviour {
 		mat_bot.color = start_color;
 	}
 
-	void Cook(Collider trigger) {
+	public void Cook(Collider trigger) {
 		if (trigger == col_top && cook_timer_top <= cook_time) {
 			cook_timer_top += Time.fixedDeltaTime;
 			mat_top.color = Vector4.Lerp(start_color, cooked_color, cook_timer_top / cook_time);

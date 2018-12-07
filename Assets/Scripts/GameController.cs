@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class GameController : MonoBehaviour {
 
@@ -15,6 +16,8 @@ public class GameController : MonoBehaviour {
 
 	// Update is called once per frame
 	void Update () {
+		OVRInput.Update();
+
 		bool allCooked = true;
 		foreach (Cookable item in food) {
 			if (!item.isCooked()) {
@@ -22,7 +25,16 @@ public class GameController : MonoBehaviour {
 			}
 		}
 		if (allCooked) {
-			winText.enabled = true;
+			Debug.Log("win");
+			winText.gameObject.SetActive(true);
 		}
+
+		if (OVRInput.Get(OVRInput.Button.One)) {
+			SceneManager.LoadScene("main_scene");
+		}
+	}
+
+	void FixedUpdate () {
+		OVRInput.FixedUpdate();
 	}
 }
