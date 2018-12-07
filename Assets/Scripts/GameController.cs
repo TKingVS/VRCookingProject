@@ -25,7 +25,6 @@ public class GameController : MonoBehaviour {
 			}
 		}
 		if (allCooked) {
-			Debug.Log("win");
 			winText.gameObject.SetActive(true);
 		}
 
